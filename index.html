@@ -10,8 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="styelsheet" href="main.css" />
     <title>News Homepage</title>
   </head>
   <body>
@@ -59,22 +66,28 @@
     </nav>
     <main>
       <div class="hero">
-        <section class="main-section">
+        <section class="hero-container">
           <img
             src="./images/image-web-3-desktop.jpg"
             alt="an abstract image"
             id="hero-img"
           />
-          <h1>The Bright Furute of Web 3.0?</h1>
-          <p>
-            We dive into the evolution of the web that claims to put the power
-            of the platforms back into the hands of the people. but is it really
-            fulfilling its performance?
-          </p>
-          <button class="readMore-btn">Read More</button>
+          <div class="hero-section">
+            <h1 class="hero-header">
+              The Bright <br />
+              Furute of <br />
+              Web 3.0?
+            </h1>
+            <p>
+              We dive into the evolution of the web that claims to put the power
+              of the platforms back into the hands of the people. but is it
+              really fulfilling its performance?
+              <button class="readMore-btn">READ MORE</button>
+            </p>
+          </div>
         </section>
         <aside class="side-panel">
-          <div>
+          <div class="side-panel-content">
             <h1>New</h1>
             <section class="section-1">
               <h4>Hydrogen VS Electric Cars</h4>
@@ -101,16 +114,32 @@
       </div>
       <section class="tabs">
         <div class="tab-1">
-          <img src="./images/image-retro-pcs.jpg" />
-          <h1>01</h1>
-          <h4>Reviving Retro PCs</h4>
-          <p>What happens when old PCs are given modern upgrades?</p>
+          <img
+            id="tab-1-img"
+            src="./images/image-retro-pcs.jpg"
+            alt="image of retro PC"
+          />
+          <div class="tab-1-topic">
+            <h1 class="tab-count">01</h1>
+            <h4>Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
         </div>
         <div class="tab-2">
-          <img src="./images/image-top-laptops.jpg" />
+          <img id="tab-2-img" src="./images/image-top-laptops.jpg" />
+          <div class="tab-2-topic">
+            <h1 class="tab-count">02</h1>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
         </div>
         <div class="tab-3">
-          <img src="./images/image-gaming-growth.jpg" />
+          <img id="tab-3-img" src="./images/image-gaming-growth.jpg" />
+          <div class="tab-3-topic">
+            <h1 class="tab-count">03</h1>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
         </div>
       </section>
     </main>
